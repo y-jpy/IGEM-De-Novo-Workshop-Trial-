@@ -511,7 +511,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
       <span class="k">You just set the design brief</span>
       <div class="rule"><span class="tile m">cover A82</span><span class="tile o">and</span><span class="tile m">cover A85</span><span class="tile o">— nothing else</span></div>
       <p>A binder that covers more than the hotspots wastes surface it could use to grip tighter.</p>
-      <span class="sci"><span class="flask">Sc</span>The patch of surface a binder touches is the <b>epitope</b></span>
+      <span class="sci"><span class="flask">Sc</span>The patch of a target molecule's surface that a binder (like an antibody) physically touches is called the <b>epitope</b></span>
     </div>
     <button class="btn acc next-btn" data-next="2" hidden>Next: run the generative AI ↓</button>
   </div>
@@ -633,7 +633,8 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
     <div class="discover" id="f1disc" hidden>
       <span class="k">8 of 10 survived</span>
       <div class="rule"><span class="tile l">pLDDT &lt; 70</span><span class="tile o">=</span><span class="tile">the model isn't sure the shape is real</span></div>
-      <p>Confidence is not the same as quality — but a design nobody can fold has no chance at all, and it is the cheapest thing to check first.</p>
+      <p> A low pLDDT value from AlphaFold tells us its not confident that that our sequence will fold as predicted in real life.</p>
+      <p>Our cut-off of 70 is a teaching setting. The published RFdiffusion binder-design protocol typically filters at <b class="num">pLDDT ≥ 80</b>. Professional pipelines throw away even more than we did today!</p>
       <span class="sci"><span class="flask">Sc</span>Filtering cheapest-first is a <b>funnel</b>; each stage is a <b>selection criterion</b></span>
     </div>
     <button class="btn acc next-btn" data-next="5" hidden>Next: does it actually grip? ↓</button>
